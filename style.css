@@ -778,162 +778,383 @@ button {
 }
 
 /* =========================================================
-   Completed Portfolio Work
+   NORTH COFFEE - Completed Work Visual
 ========================================================= */
 
-.work-card-featured {
+.work-completed-visual {
   position: relative;
-}
-
-.work-status {
-  margin-bottom: 18px;
-
-  display: inline-flex;
-  align-items: center;
-
-  gap: 8px;
-
-  font-size: 0.7rem;
-  font-weight: 700;
-
-  letter-spacing: 0.14em;
-
-  text-transform: uppercase;
-}
-
-.status-dot {
-  width: 7px;
-  height: 7px;
-
-  display: inline-block;
-
-  border-radius: 50%;
-
-  background: currentColor;
-}
-
-.work-category {
-  margin-bottom: 10px;
-
-  font-size: 0.7rem;
-
-  letter-spacing: 0.14em;
-
-  opacity: 0.65;
-}
-
-.work-card-featured h3 {
-  margin-bottom: 18px;
-}
-
-.work-description {
-  max-width: 620px;
-
-  line-height: 1.9;
-}
-
-.work-tech {
-  margin: 24px 0 0;
-  padding: 0;
+  min-height: 272px;
 
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
-  gap: 8px;
+  overflow: hidden;
 
-  list-style: none;
+  background:
+    radial-gradient(
+      circle at 50% 48%,
+      rgba(84, 255, 190, 0.055),
+      transparent 34%
+    ),
+    #19231f;
 }
 
-.work-tech li {
-  padding: 7px 11px;
 
-  border: 1px solid currentColor;
-  border-radius: 999px;
+/* ---------------------------------------------------------
+   01 / COMPLETED
+--------------------------------------------------------- */
 
-  font-size: 0.7rem;
+.completed-header {
+  position: absolute;
+
+  top: 30px;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  pointer-events: none;
+}
+
+.completed-number {
+  color: var(--accent, #59efb3);
+
+  font-family: monospace;
+
+  font-size: 2.6rem;
+  font-weight: 700;
 
   line-height: 1;
+}
 
-  opacity: 0.72;
+.completed-header p {
+  margin-top: 18px;
+
+  color: #8f9aa8;
+
+  font-family: monospace;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
 }
 
 
 /* =========================================================
-   Work Links
+   Coffee Illustration
 ========================================================= */
 
-.work-actions {
-  margin-top: 28px;
+.coffee-work-art {
+  position: relative;
 
+  width: 180px;
+  height: 125px;
+
+  margin-top: 92px;
+}
+
+
+/* ---------------------------------------------------------
+   Pot
+--------------------------------------------------------- */
+
+.coffee-pot-art {
+  position: absolute;
+
+  top: 0;
+  left: 24px;
+
+  width: 72px;
+  height: 48px;
+
+  transform:
+    rotate(-7deg);
+}
+
+.coffee-pot-body-art {
+  position: absolute;
+
+  top: 4px;
+  left: 0;
+
+  width: 58px;
+  height: 40px;
+
+  border:
+    2px solid
+    rgba(235, 240, 238, 0.82);
+
+  border-radius:
+    8px 12px 20px 20px;
+
+  transform:
+    rotate(-2deg);
+}
+
+.coffee-pot-body-art::before {
+  content: "";
+
+  position: absolute;
+
+  top: -8px;
+  left: 5px;
+
+  width: 45px;
+  height: 8px;
+
+  border-top:
+    2px solid
+    rgba(235, 240, 238, 0.82);
+
+  border-radius: 50%;
+}
+
+.coffee-pot-body-art::after {
+  content: "";
+
+  position: absolute;
+
+  top: 8px;
+  right: -32px;
+
+  width: 34px;
+  height: 2px;
+
+  background:
+    rgba(235, 240, 238, 0.82);
+
+  transform:
+    rotate(17deg);
+
+  transform-origin:
+    left center;
+}
+
+
+/* ---------------------------------------------------------
+   Coffee stream
+--------------------------------------------------------- */
+
+.coffee-stream-art {
+  position: absolute;
+
+  top: 37px;
+  left: 59px;
+
+  width: 3px;
+  height: 38px;
+
+  border-radius:
+    999px;
+
+  background:
+    #bf5b35;
+
+  transform:
+    rotate(5deg);
+
+  transform-origin:
+    top center;
+}
+
+
+/* ---------------------------------------------------------
+   Cup
+--------------------------------------------------------- */
+
+.coffee-cup-art {
+  position: absolute;
+
+  left: 48px;
+  bottom: 17px;
+
+  width: 83px;
+  height: 51px;
+
+  border:
+    2px solid
+    rgba(235, 240, 238, 0.88);
+
+  border-top: 0;
+
+  border-radius:
+    0 0 28px 28px;
+
+  overflow: visible;
+}
+
+.coffee-cup-art::before {
+  content: "";
+
+  position: absolute;
+
+  top: -2px;
+  left: -2px;
+
+  width: 83px;
+
+  border-top:
+    2px solid
+    rgba(235, 240, 238, 0.88);
+}
+
+.coffee-cup-art::after {
+  content: "";
+
+  position: absolute;
+
+  top: 10px;
+  right: -26px;
+
+  width: 27px;
+  height: 22px;
+
+  border:
+    2px solid
+    rgba(235, 240, 238, 0.88);
+
+  border-left: 0;
+
+  border-radius:
+    0 14px 14px 0;
+}
+
+
+/* ---------------------------------------------------------
+   Coffee inside cup
+--------------------------------------------------------- */
+
+.coffee-liquid-art {
+  position: absolute;
+
+  left: 5px;
+  right: 5px;
+  bottom: 4px;
+
+  height: 31px;
+
+  border-radius:
+    0 0 21px 21px;
+
+  background:
+    #bf5b35;
+}
+
+
+/* ---------------------------------------------------------
+   BREWED
+--------------------------------------------------------- */
+
+.coffee-art-label {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -18px;
+
+  color:
+    #7f8986;
+
+  font-family:
+    monospace;
+
+  font-size:
+    0.66rem;
+
+  font-weight: 600;
+
+  letter-spacing:
+    0.28em;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   Completed Work Links
+========================================================= */
+
+.work-links {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
 
   gap: 12px;
+
+  margin-top: 24px;
 }
 
-.work-link {
-  min-width: 130px;
-  min-height: 46px;
+.work-links a {
+  min-height: 42px;
 
-  padding: 10px 18px;
+  padding:
+    9px 16px;
 
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
-  gap: 20px;
+  border:
+    1px solid
+    currentColor;
 
-  border: 1px solid currentColor;
-  border-radius: 999px;
+  border-radius:
+    999px;
 
-  color: inherit;
+  color:
+    inherit;
 
-  font-size: 0.78rem;
+  font-size:
+    0.78rem;
+
   font-weight: 600;
 
   text-decoration: none;
 
   transition:
     transform 180ms ease,
-    opacity 180ms ease,
-    background 180ms ease,
-    color 180ms ease;
+    opacity 180ms ease;
 }
 
-.work-link:hover {
-  transform: translateY(-2px);
-}
+.work-links a:hover {
+  transform:
+    translateY(-2px);
 
-.work-link-primary {
-  background: currentColor;
-}
-
-.work-link-primary span {
-  /*
-   * Keeps text visible even when
-   * the button uses currentColor as background.
-   */
-  filter: invert(1);
+  opacity: 0.72;
 }
 
 
 /* =========================================================
-   Responsive
+   Mobile
 ========================================================= */
 
 @media (max-width: 600px) {
 
-  .work-actions {
-    align-items: stretch;
+  .work-completed-visual {
+    min-height: 272px;
+  }
+
+  .completed-header {
+    top: 28px;
+  }
+
+  .coffee-work-art {
+    transform:
+      scale(0.92);
+
+    transform-origin:
+      center center;
+  }
+
+  .work-links {
     flex-direction: column;
   }
 
-  .work-link {
+  .work-links a {
     width: 100%;
-  }
-
-  .work-description {
-    line-height: 1.8;
   }
 }
