@@ -4,447 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Web・バックエンド開発を中心としたエンジニアのポートフォリオ。PHP、Laravel、JavaScript、C#、Unityなどを使用した開発経験があります。"
-  >
-
+  <meta name="description" content="Web・バックエンド開発を中心としたエンジニアのポートフォリオ。PHP、Laravel、JavaScript、C#、Unityなどを使用した開発経験があります。">
   <title>Developer Portfolio | Ken Nakagomi</title>
 
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="work01.css?v=3">
+  <link rel="stylesheet" href="work01.css?v=4">
 </head>
-
 <body>
-
-  <!-- Header -->
   <header class="header">
     <div class="container header-inner">
       <a href="#top" class="logo">KN.</a>
-
       <nav class="nav" aria-label="メインナビゲーション">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#works">Works</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#works">Works</a><a href="#contact">Contact</a>
       </nav>
-
-      <button
-        class="menu-button"
-        type="button"
-        aria-label="メニューを開く"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-
   <main>
+    <section id="top" class="hero"><div class="container hero-inner">
+      <p class="hero-label">WEB / BACKEND DEVELOPER</p>
+      <h1>既存コードを読み解き、<br>必要な修正を確実に。</h1>
+      <p class="hero-description">PHP / Laravel / JavaScript / C# / Unity などを使用した Web・ゲーム開発の実務経験があります。既存システムの解析、機能追加、バグ修正、テストを中心に対応しています。</p>
+      <div class="hero-actions"><a href="#works" class="button button-primary">制作物を見る</a><a href="https://github.com/k-nkjob" class="button button-secondary" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    </div></section>
 
-    <!-- Hero -->
-    <section id="top" class="hero">
-      <div class="container hero-inner">
+    <section id="about" class="section"><div class="container">
+      <div class="section-heading"><p class="section-number">01</p><div><p class="section-label">ABOUT</p><h2>私について</h2></div></div>
+      <div class="about-grid"><div class="about-main">
+        <p>業務システム、Webシステム、ゲーム開発を中心に実務経験を積んできました。</p>
+        <p>Javaによる業務システム開発、PHPを使用したWeb・ゲームバックエンド開発、C# / Unityを使用したゲーム開発などを経験しています。</p>
+        <p>特に、既存コードや仕様を確認し、必要な修正箇所を特定したうえで行う機能追加・バグ修正・テストを得意としています。</p>
+        <p>現在はAI開発支援ツールや公式ドキュメントも活用し、コードの解析、実装、デバッグ、動作確認を効率化しています。AIによる出力についても、そのまま使用するのではなく、既存コードや仕様との整合性を確認したうえで利用しています。</p>
+      </div><div class="about-side">
+        <div class="info-item"><span class="info-label">FOCUS</span><p>既存システム改修 / バグ修正 / 機能追加</p></div>
+        <div class="info-item"><span class="info-label">WORK STYLE</span><p>Remote / Short-term / Maintenance</p></div>
+        <div class="info-item"><span class="info-label">DEVELOPMENT</span><p>Web / Backend / Game</p></div>
+      </div></div>
+    </div></section>
 
-        <p class="hero-label">WEB / BACKEND DEVELOPER</p>
-
-        <h1>
-          既存コードを読み解き、<br>
-          必要な修正を確実に。
-        </h1>
-
-        <p class="hero-description">
-          PHP / Laravel / JavaScript / C# / Unity などを使用した
-          Web・ゲーム開発の実務経験があります。
-          既存システムの解析、機能追加、バグ修正、テストを中心に対応しています。
-        </p>
-
-        <div class="hero-actions">
-          <a href="#works" class="button button-primary">
-            制作物を見る
-          </a>
-
-          <a
-            href="https://github.com/k-nkjob"
-            class="button button-secondary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </div>
-
+    <section class="section section-alt"><div class="container">
+      <div class="section-heading"><p class="section-number">02</p><div><p class="section-label">WHAT I DO</p><h2>対応可能な業務</h2></div></div>
+      <div class="service-grid">
+        <article class="service-card"><span class="service-number">01</span><h3>Bug Fix</h3><p>既存コードと発生している現象を確認し、原因を調査して必要な修正を行います。</p></article>
+        <article class="service-card"><span class="service-number">02</span><h3>Feature Development</h3><p>既存システムの仕様を確認したうえで、小規模な機能追加や仕様変更に対応します。</p></article>
+        <article class="service-card"><span class="service-number">03</span><h3>Code Analysis</h3><p>既存コードを読み解き、処理内容や影響範囲を整理して修正箇所を特定します。</p></article>
+        <article class="service-card"><span class="service-number">04</span><h3>Test & Debug</h3><p>修正後の動作確認やテストを行い、不具合の再現・原因調査・修正を進めます。</p></article>
       </div>
-    </section>
+    </div></section>
 
-
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="section-number">01</p>
-          <div>
-            <p class="section-label">ABOUT</p>
-            <h2>私について</h2>
-          </div>
-        </div>
-
-        <div class="about-grid">
-
-          <div class="about-main">
-            <p>
-              業務システム、Webシステム、ゲーム開発を中心に
-              実務経験を積んできました。
-            </p>
-
-            <p>
-              Javaによる業務システム開発、
-              PHPを使用したWeb・ゲームバックエンド開発、
-              C# / Unityを使用したゲーム開発などを経験しています。
-            </p>
-
-            <p>
-              特に、既存コードや仕様を確認し、
-              必要な修正箇所を特定したうえで行う
-              機能追加・バグ修正・テストを得意としています。
-            </p>
-
-            <p>
-              現在はAI開発支援ツールや公式ドキュメントも活用し、
-              コードの解析、実装、デバッグ、動作確認を効率化しています。
-              AIによる出力についても、そのまま使用するのではなく、
-              既存コードや仕様との整合性を確認したうえで利用しています。
-            </p>
-          </div>
-
-          <div class="about-side">
-
-            <div class="info-item">
-              <span class="info-label">FOCUS</span>
-              <p>既存システム改修 / バグ修正 / 機能追加</p>
-            </div>
-
-            <div class="info-item">
-              <span class="info-label">WORK STYLE</span>
-              <p>Remote / Short-term / Maintenance</p>
-            </div>
-
-            <div class="info-item">
-              <span class="info-label">DEVELOPMENT</span>
-              <p>Web / Backend / Game</p>
-            </div>
-
-          </div>
-
-        </div>
+    <section id="skills" class="section"><div class="container">
+      <div class="section-heading"><p class="section-number">03</p><div><p class="section-label">SKILLS</p><h2>技術領域</h2></div></div>
+      <div class="skills-grid">
+        <div class="skill-group"><h3>Backend</h3><div class="skill-list"><span>PHP</span><span>Laravel</span><span>Java</span><span>SQL</span><span>MySQL</span><span>SQL Server</span></div></div>
+        <div class="skill-group"><h3>Frontend</h3><div class="skill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+        <div class="skill-group"><h3>Game</h3><div class="skill-list"><span>C#</span><span>Unity</span></div></div>
+        <div class="skill-group"><h3>Other</h3><div class="skill-list"><span>Git</span><span>Excel</span><span>VBA</span><span>Python Reading</span><span>AI-assisted Development</span></div></div>
       </div>
-    </section>
+    </div></section>
 
-
-    <!-- Services -->
-    <section class="section section-alt">
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="section-number">02</p>
-          <div>
-            <p class="section-label">WHAT I DO</p>
-            <h2>対応可能な業務</h2>
+    <section id="works" class="section section-alt"><div class="container">
+      <div class="section-heading"><p class="section-number">04</p><div><p class="section-label">WORKS</p><h2>自主制作</h2></div></div>
+      <p class="works-intro">公開可能な自主制作物を掲載しています。各作品では、使用技術・実装内容・ソースコードを確認できます。</p>
+      <div class="works-grid">
+        <article class="work-card">
+          <div class="work-image work-completed-visual">
+            <span class="completed-number">01</span><span class="completed-status">COMPLETED</span>
+            <div class="coffee-work-art" aria-hidden="true">
+              <div class="coffee-steam-art"><span></span><span></span><span></span></div>
+              <div class="coffee-cup-art"><span class="coffee-liquid-art"></span></div>
+              <span class="coffee-art-label">BREWED</span>
+            </div>
           </div>
-        </div>
-
-        <div class="service-grid">
-
-          <article class="service-card">
-            <span class="service-number">01</span>
-            <h3>Bug Fix</h3>
-            <p>
-              既存コードと発生している現象を確認し、
-              原因を調査して必要な修正を行います。
-            </p>
-          </article>
-
-          <article class="service-card">
-            <span class="service-number">02</span>
-            <h3>Feature Development</h3>
-            <p>
-              既存システムの仕様を確認したうえで、
-              小規模な機能追加や仕様変更に対応します。
-            </p>
-          </article>
-
-          <article class="service-card">
-            <span class="service-number">03</span>
-            <h3>Code Analysis</h3>
-            <p>
-              既存コードを読み解き、
-              処理内容や影響範囲を整理して修正箇所を特定します。
-            </p>
-          </article>
-
-          <article class="service-card">
-            <span class="service-number">04</span>
-            <h3>Test & Debug</h3>
-            <p>
-              修正後の動作確認やテストを行い、
-              不具合の再現・原因調査・修正を進めます。
-            </p>
-          </article>
-
-        </div>
+          <div class="work-content"><p class="work-type">FRONTEND</p><h3>NORTH COFFEE</h3><p>架空のコーヒーショップを題材にしたレスポンシブWebサイトです。HTML / CSS / JavaScriptを責務ごとに分離し、既存サイトの修正や機能追加を想定した保守しやすい構成で実装しています。</p><div class="work-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>ES Modules</span></div><div class="work-links"><a href="https://k-nkjob.github.io/responsive-cafe-site/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/k-nkjob/responsive-cafe-site" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
+        </article>
+        <article class="work-card"><div class="work-image work-placeholder"><span>02</span><p>IN PROGRESS</p></div><div class="work-content"><p class="work-type">BACKEND</p><h3>PHP Management System</h3><p>PHP / MySQLを使用したデータ管理システムを制作予定です。</p><div class="work-tags"><span>PHP</span><span>MySQL</span><span>CRUD</span></div></div></article>
+        <article class="work-card"><div class="work-image work-placeholder"><span>03</span><p>IN PROGRESS</p></div><div class="work-content"><p class="work-type">DEBUG</p><h3>Debug & Refactoring Sample</h3><p>不具合を含む既存コードを対象に、原因調査から修正・テストまでの工程を公開予定です。</p><div class="work-tags"><span>Debug</span><span>Refactoring</span><span>Testing</span></div></div></article>
       </div>
-    </section>
+    </div></section>
 
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="section-number">03</p>
-          <div>
-            <p class="section-label">SKILLS</p>
-            <h2>技術領域</h2>
-          </div>
-        </div>
-
-        <div class="skills-grid">
-
-          <div class="skill-group">
-            <h3>Backend</h3>
-            <div class="skill-list">
-              <span>PHP</span>
-              <span>Laravel</span>
-              <span>Java</span>
-              <span>SQL</span>
-              <span>MySQL</span>
-              <span>SQL Server</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h3>Frontend</h3>
-            <div class="skill-list">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h3>Game</h3>
-            <div class="skill-list">
-              <span>C#</span>
-              <span>Unity</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h3>Other</h3>
-            <div class="skill-list">
-              <span>Git</span>
-              <span>Excel</span>
-              <span>VBA</span>
-              <span>Python Reading</span>
-              <span>AI-assisted Development</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Works -->
-    <section id="works" class="section section-alt">
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="section-number">04</p>
-          <div>
-            <p class="section-label">WORKS</p>
-            <h2>自主制作</h2>
-          </div>
-        </div>
-
-        <p class="works-intro">
-          公開可能な自主制作物を掲載しています。
-          各作品では、使用技術・実装内容・ソースコードを確認できます。
-        </p>
-
-        <div class="works-grid">
-
-          <!-- Work 01 -->
-          <article class="work-card">
-            <div class="work-image work-completed-visual">
-              <span class="completed-number">01</span>
-              <span class="completed-status">COMPLETED</span>
-
-              <div class="coffee-work-art" aria-hidden="true">
-                <div class="coffee-steam-art">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-
-                <div class="coffee-cup-art">
-                  <span class="coffee-liquid-art"></span>
-                </div>
-
-                <span class="coffee-art-label">BREWED</span>
-              </div>
-            </div>
-
-            <div class="work-content">
-              <p class="work-type">FRONTEND</p>
-              <h3>NORTH COFFEE</h3>
-
-              <p>
-                架空のコーヒーショップを題材にしたレスポンシブWebサイトです。
-                HTML / CSS / JavaScriptを責務ごとに分離し、
-                既存サイトの修正や機能追加を想定した
-                保守しやすい構成で実装しています。
-              </p>
-
-              <div class="work-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Responsive</span>
-                <span>ES Modules</span>
-              </div>
-
-              <div class="work-links">
-                <a href="https://k-nkjob.github.io/responsive-cafe-site/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
-                <a href="https://github.com/k-nkjob/responsive-cafe-site" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Work 02 -->
-          <article class="work-card">
-
-            <div class="work-image work-placeholder">
-              <span>02</span>
-              <p>IN PROGRESS</p>
-            </div>
-
-            <div class="work-content">
-
-              <p class="work-type">BACKEND</p>
-
-              <h3>PHP Management System</h3>
-
-              <p>
-                PHP / MySQLを使用した
-                データ管理システムを制作予定です。
-              </p>
-
-              <div class="work-tags">
-                <span>PHP</span>
-                <span>MySQL</span>
-                <span>CRUD</span>
-              </div>
-
-            </div>
-          </article>
-
-
-          <!-- Work 03 -->
-          <article class="work-card">
-
-            <div class="work-image work-placeholder">
-              <span>03</span>
-              <p>IN PROGRESS</p>
-            </div>
-
-            <div class="work-content">
-
-              <p class="work-type">DEBUG</p>
-
-              <h3>Debug & Refactoring Sample</h3>
-
-              <p>
-                不具合を含む既存コードを対象に、
-                原因調査から修正・テストまでの工程を公開予定です。
-              </p>
-
-              <div class="work-tags">
-                <span>Debug</span>
-                <span>Refactoring</span>
-                <span>Testing</span>
-              </div>
-
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact" class="section contact-section">
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="section-number">05</p>
-          <div>
-            <p class="section-label">CONTACT</p>
-            <h2>お問い合わせ</h2>
-          </div>
-        </div>
-
-        <div class="contact-box">
-
-          <div>
-            <h3>
-              小規模な修正・機能追加から<br>
-              対応可能です。
-            </h3>
-
-            <p>
-              既存コード・仕様・現在発生している問題をご共有いただければ、
-              内容を確認したうえで対応方法を検討します。
-            </p>
-          </div>
-
-          <a
-            href="https://github.com/k-nkjob"
-            class="button button-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHubを見る
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
+    <section id="contact" class="section contact-section"><div class="container">
+      <div class="section-heading"><p class="section-number">05</p><div><p class="section-label">CONTACT</p><h2>お問い合わせ</h2></div></div>
+      <div class="contact-box"><div><h3>小規模な修正・機能追加から<br>対応可能です。</h3><p>既存コード・仕様・現在発生している問題をご共有いただければ、内容を確認したうえで対応方法を検討します。</p></div><a href="https://github.com/k-nkjob" class="button button-primary" target="_blank" rel="noopener noreferrer">GitHubを見る</a></div>
+    </div></section>
   </main>
 
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-inner">
-
-      <p class="footer-logo">KN.</p>
-
-      <p>
-        &copy; <span id="current-year"></span> Ken Nakagomi
-      </p>
-
-    </div>
-  </footer>
-
-
+  <footer class="footer"><div class="container footer-inner"><p class="footer-logo">KN.</p><p>&copy; <span id="current-year"></span> Ken Nakagomi</p></div></footer>
   <script src="script.js"></script>
-
 </body>
 </html>
