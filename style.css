@@ -843,15 +843,14 @@ button {
 ========================================================= */
 
 .coffee-work-art {
-   position: relative;
+  position: relative;
 
   width: 150px;
-  height: 110px;
+  height: 92px;
 
-  margin-top: 68px;
+  margin-top: 76px;
 
-  /* 横幅は維持して縦だけ85%に圧縮 */
-  transform: scaleY(0.85);
+  transform: scale(0.90, 0.68);
 
   transform-origin: center center;
 }
@@ -1028,12 +1027,11 @@ button {
 
   left: 0;
   right: 0;
-  bottom: -21px;
+  bottom: -13px;
 
   color: var(--text-muted);
 
   font-family: monospace;
-
   font-size: 0.62rem;
   font-weight: 700;
 
