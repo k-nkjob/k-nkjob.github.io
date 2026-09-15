@@ -1,0 +1,162 @@
+/* NORTH COFFEE completed-card visual override */
+
+/* Keep the completed card the same size as the other work cards. */
+.work-completed-visual {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(110, 231, 183, 0.09), rgba(255, 255, 255, 0.02));
+}
+
+.work-completed-visual .completed-number {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  color: var(--accent);
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.work-completed-visual .completed-status {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  right: 0;
+  color: var(--text-muted);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+/* The old pot markup remains for compatibility, but only the steam is shown. */
+.coffee-work-art {
+  position: absolute;
+  left: 50%;
+  top: 104px;
+  width: 150px;
+  height: 88px;
+  margin: 0;
+  transform: translateX(-50%);
+  transform-origin: center;
+}
+
+.coffee-pot-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+}
+
+.coffee-pot-body-art {
+  display: none;
+}
+
+/* Convert the former pouring stream into three subtle steam trails. */
+.coffee-stream-art,
+.coffee-stream-art::before,
+.coffee-stream-art::after {
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 23px;
+  border-radius: 999px;
+  background: rgba(245, 247, 250, 0.62);
+}
+
+.coffee-stream-art {
+  top: 0;
+  left: 74px;
+  transform: rotate(-8deg);
+}
+
+.coffee-stream-art::before,
+.coffee-stream-art::after {
+  content: "";
+  top: 3px;
+}
+
+.coffee-stream-art::before {
+  left: -14px;
+  height: 18px;
+  opacity: 0.62;
+  transform: rotate(14deg);
+}
+
+.coffee-stream-art::after {
+  left: 14px;
+  height: 19px;
+  opacity: 0.48;
+  transform: rotate(-12deg);
+}
+
+.coffee-cup-art {
+  position: absolute;
+  left: 39px;
+  bottom: 10px;
+  width: 72px;
+  height: 40px;
+  border: 2px solid rgba(245, 247, 250, 0.88);
+  border-top: 0;
+  border-radius: 0 0 24px 24px;
+}
+
+.coffee-cup-art::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 72px;
+  border-top: 2px solid rgba(245, 247, 250, 0.88);
+}
+
+.coffee-cup-art::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -23px;
+  width: 24px;
+  height: 18px;
+  border: 2px solid rgba(245, 247, 250, 0.88);
+  border-left: 0;
+  border-radius: 0 12px 12px 0;
+}
+
+.coffee-liquid-art {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  height: 24px;
+  background: #bf5b35;
+  border-radius: 0 0 19px 19px;
+}
+
+.coffee-art-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -13px;
+  color: var(--text-muted);
+  font-family: monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .coffee-work-art {
+    top: 102px;
+    transform: translateX(-50%) scale(0.94);
+  }
+}
