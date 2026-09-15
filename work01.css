@@ -3,10 +3,6 @@
 .work-completed-visual {
   position: relative;
   aspect-ratio: 16 / 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   background: linear-gradient(135deg, rgba(110, 231, 183, 0.09), rgba(255, 255, 255, 0.02));
 }
@@ -38,79 +34,65 @@
 
 .coffee-work-art {
   position: absolute;
-  left: 50%;
   top: 102px;
+  left: 50%;
   width: 150px;
   height: 90px;
   margin: 0;
   transform: translateX(-50%);
-  transform-origin: center;
 }
 
-.coffee-pot-art {
+/* Three true curved steam wisps. */
+.coffee-steam-art {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  transform: none;
+  top: -5px;
+  left: 50%;
+  width: 62px;
+  height: 34px;
+  transform: translateX(-50%);
 }
 
-.coffee-pot-body-art {
-  display: none;
-}
-
-/* Curved steam: three soft S-shaped trails instead of straight lines. */
-.coffee-stream-art,
-.coffee-stream-art::before,
-.coffee-stream-art::after {
+.coffee-steam-art span {
   position: absolute;
-  display: block;
-  width: 12px;
-  height: 29px;
-  background: transparent;
-  border: 0;
-  border-left: 3px solid rgba(245, 247, 250, 0.58);
+  top: 0;
+  width: 13px;
+  height: 30px;
   border-radius: 50%;
-  box-shadow: none;
+  border-left: 3px solid rgba(245, 247, 250, 0.62);
+  border-right: 2px solid transparent;
+  transform: rotate(13deg) skewY(-12deg);
 }
 
-.coffee-stream-art {
-  top: -2px;
-  left: 69px;
-  transform: skewX(-9deg) rotate(7deg);
-}
-
-.coffee-stream-art::before,
-.coffee-stream-art::after {
+.coffee-steam-art span::after {
   content: "";
-  top: 3px;
+  position: absolute;
+  left: 4px;
+  top: 11px;
+  width: 10px;
+  height: 18px;
+  border-radius: 50%;
+  border-right: 2px solid rgba(245, 247, 250, 0.42);
+  transform: rotate(-23deg);
 }
 
-.coffee-stream-art::before {
-  left: -18px;
+.coffee-steam-art span:nth-child(1) {
+  left: 4px;
+  top: 5px;
   height: 24px;
-  opacity: 0.72;
-  transform: skewX(11deg) rotate(8deg);
+  opacity: 0.62;
+  transform: rotate(16deg) skewY(-10deg) scale(0.86);
 }
 
-.coffee-stream-art::after {
-  left: 18px;
+.coffee-steam-art span:nth-child(2) {
+  left: 25px;
+}
+
+.coffee-steam-art span:nth-child(3) {
+  left: 46px;
+  top: 6px;
   height: 23px;
   opacity: 0.58;
-  transform: skewX(-12deg) rotate(10deg);
-}
-
-/* Add a second opposing curve to the center trail to make it read as steam. */
-.coffee-pot-art::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 76px;
-  width: 9px;
-  height: 18px;
-  border-right: 2px solid rgba(245, 247, 250, 0.28);
-  border-radius: 50%;
-  transform: rotate(8deg);
+  transform: rotate(11deg) skewY(-14deg) scale(0.82);
 }
 
 .coffee-cup-art {
