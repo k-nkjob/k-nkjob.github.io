@@ -843,12 +843,17 @@ button {
 ========================================================= */
 
 .coffee-work-art {
-  position: relative;
+   position: relative;
 
   width: 150px;
   height: 110px;
 
-  margin-top: 50px;
+  margin-top: 68px;
+
+  /* 横幅は維持して縦だけ85%に圧縮 */
+  transform: scaleY(0.85);
+
+  transform-origin: center center;
 }
 
 
@@ -1097,7 +1102,7 @@ button {
   }
 
   .coffee-work-art {
-    transform: scale(0.9);
+    transform: scale(0.92, 0.80);
   }
 
 }
