@@ -778,70 +778,63 @@ button {
 }
 
 /* =========================================================
-   NORTH COFFEE - Completed Work Visual
+   WORK 01 - NORTH COFFEE
 ========================================================= */
 
 .work-completed-visual {
   position: relative;
-  min-height: 272px;
+  aspect-ratio: 16 / 10;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
   overflow: hidden;
 
   background:
-    radial-gradient(
-      circle at 50% 48%,
-      rgba(84, 255, 190, 0.055),
-      transparent 34%
-    ),
-    #19231f;
+    linear-gradient(
+      135deg,
+      rgba(110, 231, 183, 0.09),
+      rgba(255, 255, 255, 0.02)
+    );
 }
 
 
-/* ---------------------------------------------------------
-   01 / COMPLETED
---------------------------------------------------------- */
+/* ---------- Number ---------- */
 
-.completed-header {
+.work-completed-visual .completed-number {
   position: absolute;
-
-  top: 30px;
+  top: 26px;
   left: 0;
+  right: 0;
 
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  pointer-events: none;
-}
-
-.completed-number {
-  color: var(--accent, #59efb3);
+  color: var(--accent);
 
   font-family: monospace;
-
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-weight: 700;
-
   line-height: 1;
+
+  text-align: center;
 }
 
-.completed-header p {
-  margin-top: 18px;
 
-  color: #8f9aa8;
+/* ---------- Status ---------- */
 
-  font-family: monospace;
+.work-completed-visual .completed-status {
+  position: absolute;
+  top: 72px;
+  left: 0;
+  right: 0;
 
-  font-size: 0.78rem;
-  font-weight: 700;
+  color: var(--text-muted);
 
-  letter-spacing: 0.18em;
+  font-size: 0.65rem;
+  font-weight: 800;
+
+  letter-spacing: 0.2em;
+  text-align: center;
 }
 
 
@@ -852,49 +845,43 @@ button {
 .coffee-work-art {
   position: relative;
 
-  width: 180px;
-  height: 125px;
+  width: 150px;
+  height: 110px;
 
-  margin-top: 92px;
+  margin-top: 50px;
 }
 
 
-/* ---------------------------------------------------------
-   Pot
---------------------------------------------------------- */
+/* ---------- Pot ---------- */
 
 .coffee-pot-art {
   position: absolute;
 
   top: 0;
-  left: 24px;
+  left: 23px;
 
-  width: 72px;
-  height: 48px;
+  width: 66px;
+  height: 45px;
 
-  transform:
-    rotate(-7deg);
+  transform: rotate(-7deg);
 }
+
 
 .coffee-pot-body-art {
   position: absolute;
 
-  top: 4px;
+  top: 5px;
   left: 0;
 
-  width: 58px;
-  height: 40px;
+  width: 55px;
+  height: 38px;
 
-  border:
-    2px solid
-    rgba(235, 240, 238, 0.82);
+  border: 2px solid rgba(245, 247, 250, 0.82);
 
   border-radius:
-    8px 12px 20px 20px;
-
-  transform:
-    rotate(-2deg);
+    9px 11px 18px 18px;
 }
+
 
 .coffee-pot-body-art::before {
   content: "";
@@ -902,91 +889,78 @@ button {
   position: absolute;
 
   top: -8px;
-  left: 5px;
+  left: 6px;
 
-  width: 45px;
+  width: 42px;
   height: 8px;
 
   border-top:
-    2px solid
-    rgba(235, 240, 238, 0.82);
+    2px solid rgba(245, 247, 250, 0.82);
 
   border-radius: 50%;
 }
+
 
 .coffee-pot-body-art::after {
   content: "";
 
   position: absolute;
 
-  top: 8px;
-  right: -32px;
+  top: 9px;
+  right: -31px;
 
-  width: 34px;
+  width: 32px;
   height: 2px;
 
   background:
-    rgba(235, 240, 238, 0.82);
+    rgba(245, 247, 250, 0.82);
 
-  transform:
-    rotate(17deg);
+  transform: rotate(17deg);
 
   transform-origin:
     left center;
 }
 
 
-/* ---------------------------------------------------------
-   Coffee stream
---------------------------------------------------------- */
+/* ---------- Stream ---------- */
 
 .coffee-stream-art {
   position: absolute;
 
-  top: 37px;
-  left: 59px;
+  top: 38px;
+  left: 57px;
 
-  width: 3px;
-  height: 38px;
+  width: 2px;
+  height: 30px;
 
-  border-radius:
-    999px;
+  background: #bf5b35;
 
-  background:
-    #bf5b35;
+  border-radius: 999px;
 
-  transform:
-    rotate(5deg);
-
-  transform-origin:
-    top center;
+  transform: rotate(5deg);
 }
 
 
-/* ---------------------------------------------------------
-   Cup
---------------------------------------------------------- */
+/* ---------- Cup ---------- */
 
 .coffee-cup-art {
   position: absolute;
 
-  left: 48px;
-  bottom: 17px;
+  left: 44px;
+  bottom: 8px;
 
-  width: 83px;
-  height: 51px;
+  width: 72px;
+  height: 43px;
 
   border:
-    2px solid
-    rgba(235, 240, 238, 0.88);
+    2px solid rgba(245, 247, 250, 0.88);
 
   border-top: 0;
 
   border-radius:
-    0 0 28px 28px;
-
-  overflow: visible;
+    0 0 24px 24px;
 }
+
 
 .coffee-cup-art::before {
   content: "";
@@ -996,135 +970,119 @@ button {
   top: -2px;
   left: -2px;
 
-  width: 83px;
+  width: 72px;
 
   border-top:
-    2px solid
-    rgba(235, 240, 238, 0.88);
+    2px solid rgba(245, 247, 250, 0.88);
 }
+
 
 .coffee-cup-art::after {
   content: "";
 
   position: absolute;
 
-  top: 10px;
-  right: -26px;
+  top: 8px;
+  right: -23px;
 
-  width: 27px;
-  height: 22px;
+  width: 24px;
+  height: 19px;
 
   border:
-    2px solid
-    rgba(235, 240, 238, 0.88);
+    2px solid rgba(245, 247, 250, 0.88);
 
   border-left: 0;
 
   border-radius:
-    0 14px 14px 0;
+    0 12px 12px 0;
 }
 
 
-/* ---------------------------------------------------------
-   Coffee inside cup
---------------------------------------------------------- */
+/* ---------- Coffee ---------- */
 
 .coffee-liquid-art {
   position: absolute;
 
-  left: 5px;
-  right: 5px;
+  left: 4px;
+  right: 4px;
   bottom: 4px;
 
-  height: 31px;
+  height: 27px;
+
+  background: #bf5b35;
 
   border-radius:
-    0 0 21px 21px;
-
-  background:
-    #bf5b35;
+    0 0 19px 19px;
 }
 
 
-/* ---------------------------------------------------------
-   BREWED
---------------------------------------------------------- */
+/* ---------- BREWED ---------- */
 
 .coffee-art-label {
   position: absolute;
 
   left: 0;
   right: 0;
-  bottom: -18px;
+  bottom: -21px;
 
-  color:
-    #7f8986;
+  color: var(--text-muted);
 
-  font-family:
-    monospace;
+  font-family: monospace;
 
-  font-size:
-    0.66rem;
+  font-size: 0.62rem;
+  font-weight: 700;
 
-  font-weight: 600;
-
-  letter-spacing:
-    0.28em;
+  letter-spacing: 0.26em;
 
   text-align: center;
 }
 
 
 /* =========================================================
-   Completed Work Links
+   Work Links
 ========================================================= */
 
 .work-links {
   display: flex;
   flex-wrap: wrap;
 
-  gap: 12px;
+  gap: 10px;
 
-  margin-top: 24px;
+  margin-top: 22px;
 }
 
-.work-links a {
-  min-height: 42px;
 
-  padding:
-    9px 16px;
+.work-links a {
+  min-height: 40px;
+
+  padding: 8px 15px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  border:
-    1px solid
-    currentColor;
+  border: 1px solid var(--border);
+  border-radius: 999px;
 
-  border-radius:
-    999px;
+  color: var(--text);
 
-  color:
-    inherit;
-
-  font-size:
-    0.78rem;
-
-  font-weight: 600;
-
-  text-decoration: none;
+  font-size: 0.76rem;
+  font-weight: 700;
 
   transition:
-    transform 180ms ease,
-    opacity 180ms ease;
+    transform var(--transition),
+    border-color var(--transition),
+    background var(--transition);
 }
 
-.work-links a:hover {
-  transform:
-    translateY(-2px);
 
-  opacity: 0.72;
+.work-links a:hover {
+  transform: translateY(-2px);
+
+  background: var(--surface-hover);
+
+  border-color:
+    rgba(110, 231, 183, 0.4);
 }
 
 
@@ -1132,23 +1090,20 @@ button {
    Mobile
 ========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
   .work-completed-visual {
-    min-height: 272px;
-  }
-
-  .completed-header {
-    top: 28px;
+    aspect-ratio: 16 / 10;
   }
 
   .coffee-work-art {
-    transform:
-      scale(0.92);
-
-    transform-origin:
-      center center;
+    transform: scale(0.9);
   }
+
+}
+
+
+@media (max-width: 420px) {
 
   .work-links {
     flex-direction: column;
@@ -1157,4 +1112,5 @@ button {
   .work-links a {
     width: 100%;
   }
+
 }
