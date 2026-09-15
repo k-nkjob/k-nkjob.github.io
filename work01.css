@@ -1,6 +1,5 @@
 /* NORTH COFFEE completed-card visual override */
 
-/* Keep the completed card the same size as the other work cards. */
 .work-completed-visual {
   position: relative;
   aspect-ratio: 16 / 10;
@@ -37,13 +36,12 @@
   text-align: center;
 }
 
-/* The old pot markup remains for compatibility, but only the steam is shown. */
 .coffee-work-art {
   position: absolute;
   left: 50%;
-  top: 104px;
+  top: 102px;
   width: 150px;
-  height: 88px;
+  height: 90px;
   margin: 0;
   transform: translateX(-50%);
   transform-origin: center;
@@ -61,22 +59,25 @@
   display: none;
 }
 
-/* Convert the former pouring stream into three subtle steam trails. */
+/* Curved steam: three soft S-shaped trails instead of straight lines. */
 .coffee-stream-art,
 .coffee-stream-art::before,
 .coffee-stream-art::after {
   position: absolute;
   display: block;
-  width: 2px;
-  height: 23px;
-  border-radius: 999px;
-  background: rgba(245, 247, 250, 0.62);
+  width: 12px;
+  height: 29px;
+  background: transparent;
+  border: 0;
+  border-left: 3px solid rgba(245, 247, 250, 0.58);
+  border-radius: 50%;
+  box-shadow: none;
 }
 
 .coffee-stream-art {
-  top: 0;
-  left: 74px;
-  transform: rotate(-8deg);
+  top: -2px;
+  left: 69px;
+  transform: skewX(-9deg) rotate(7deg);
 }
 
 .coffee-stream-art::before,
@@ -86,23 +87,36 @@
 }
 
 .coffee-stream-art::before {
-  left: -14px;
-  height: 18px;
-  opacity: 0.62;
-  transform: rotate(14deg);
+  left: -18px;
+  height: 24px;
+  opacity: 0.72;
+  transform: skewX(11deg) rotate(8deg);
 }
 
 .coffee-stream-art::after {
-  left: 14px;
-  height: 19px;
-  opacity: 0.48;
-  transform: rotate(-12deg);
+  left: 18px;
+  height: 23px;
+  opacity: 0.58;
+  transform: skewX(-12deg) rotate(10deg);
+}
+
+/* Add a second opposing curve to the center trail to make it read as steam. */
+.coffee-pot-art::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 76px;
+  width: 9px;
+  height: 18px;
+  border-right: 2px solid rgba(245, 247, 250, 0.28);
+  border-radius: 50%;
+  transform: rotate(8deg);
 }
 
 .coffee-cup-art {
   position: absolute;
   left: 39px;
-  bottom: 10px;
+  bottom: 9px;
   width: 72px;
   height: 40px;
   border: 2px solid rgba(245, 247, 250, 0.88);
