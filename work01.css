@@ -34,65 +34,64 @@
 
 .coffee-work-art {
   position: absolute;
-  top: 102px;
+  top: 101px;
   left: 50%;
   width: 150px;
-  height: 90px;
+  height: 91px;
   margin: 0;
   transform: translateX(-50%);
 }
 
-/* Three true curved steam wisps. */
+/* Filled S-shaped steam wisps, not stroked lines. */
 .coffee-steam-art {
   position: absolute;
-  top: -5px;
+  top: -9px;
   left: 50%;
-  width: 62px;
-  height: 34px;
+  width: 68px;
+  height: 40px;
   transform: translateX(-50%);
 }
 
 .coffee-steam-art span {
   position: absolute;
-  top: 0;
+  display: block;
   width: 13px;
-  height: 30px;
-  border-radius: 50%;
-  border-left: 3px solid rgba(245, 247, 250, 0.62);
-  border-right: 2px solid transparent;
-  transform: rotate(13deg) skewY(-12deg);
+  height: 35px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(245,247,250,.28), rgba(245,247,250,.86));
+  clip-path: polygon(58% 0%, 90% 8%, 78% 24%, 46% 40%, 34% 55%, 42% 70%, 69% 84%, 55% 100%, 23% 88%, 10% 72%, 17% 53%, 43% 36%, 55% 22%, 49% 10%);
+  filter: drop-shadow(0 0 2px rgba(245,247,250,.12));
+  border: 0;
+  border-radius: 0;
 }
 
 .coffee-steam-art span::after {
-  content: "";
-  position: absolute;
-  left: 4px;
-  top: 11px;
-  width: 10px;
-  height: 18px;
-  border-radius: 50%;
-  border-right: 2px solid rgba(245, 247, 250, 0.42);
-  transform: rotate(-23deg);
+  content: none;
 }
 
 .coffee-steam-art span:nth-child(1) {
-  left: 4px;
-  top: 5px;
-  height: 24px;
-  opacity: 0.62;
-  transform: rotate(16deg) skewY(-10deg) scale(0.86);
+  left: 3px;
+  top: 8px;
+  height: 27px;
+  opacity: .72;
+  transform: rotate(4deg) scale(.86);
 }
 
 .coffee-steam-art span:nth-child(2) {
-  left: 25px;
+  left: 27px;
+  top: 0;
+  width: 15px;
+  height: 38px;
+  opacity: .94;
+  transform: scale(1.08);
 }
 
 .coffee-steam-art span:nth-child(3) {
-  left: 46px;
-  top: 6px;
-  height: 23px;
-  opacity: 0.58;
-  transform: rotate(11deg) skewY(-14deg) scale(0.82);
+  left: 52px;
+  top: 9px;
+  height: 26px;
+  opacity: .68;
+  transform: rotate(-4deg) scale(.84);
 }
 
 .coffee-cup-art {
@@ -152,7 +151,7 @@
 
 @media (max-width: 700px) {
   .coffee-work-art {
-    top: 102px;
+    top: 101px;
     transform: translateX(-50%) scale(0.94);
   }
 }
