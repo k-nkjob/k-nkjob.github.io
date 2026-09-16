@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="work01.css?v=4">
   <link rel="stylesheet" href="work02.css?v=1">
+  <link rel="stylesheet" href="work03.css?v=1">
 </head>
 <body>
   <header class="header">
@@ -90,7 +91,17 @@
           </div>
           <div class="work-content"><p class="work-type">BACKEND</p><h3>PHP Management System</h3><p>ログイン認証付きの顧客管理システムです。PHP / PDO / MySQLでCRUD・検索・ページネーションを実装し、認証、DB接続、入力検証、CSRF対策、データアクセスを責務ごとに分離しています。</p><div class="work-tags"><span>PHP</span><span>PDO</span><span>MySQL</span><span>CRUD</span><span>Security</span><span>GitHub Actions</span></div><div class="work-links"><a href="https://knkjob-pms.infinityfree.io/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/k-nkjob/php-management-system" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
         </article>
-        <article class="work-card"><div class="work-image work-placeholder"><span>03</span><p>IN PROGRESS</p></div><div class="work-content"><p class="work-type">DEBUG</p><h3>Debug & Refactoring Sample</h3><p>不具合を含む既存コードを対象に、原因調査から修正・テストまでの工程を公開予定です。</p><div class="work-tags"><span>Debug</span><span>Refactoring</span><span>Testing</span></div></div></article>
+        <article class="work-card">
+          <div class="work-image work03-progress-visual">
+            <span class="work03-number">03</span><span class="work03-status">IN PROGRESS</span>
+            <div class="modernization-work-art" aria-hidden="true">
+              <div class="code-window-art"></div>
+              <div class="modernization-badge-art">✓</div>
+              <span class="modernization-art-label">AUDIT / FIX / VERIFY</span>
+            </div>
+          </div>
+          <div class="work-content"><p class="work-type">DEBUG / MODERNIZATION</p><h3>Legacy PHP Inventory System Modernization</h3><p>MITライセンスの既存PHP在庫管理OSSをForkし、SQL直結・平文パスワード・GET削除・全件取得などの問題を調査。PDO / Prepared Statement、ハッシュ認証、CSRF対策、トランザクション、DB側検索・ページネーションへ改修しました。実際の操作から商品別入出庫履歴と、履歴から対象商品を引き継ぐ入出庫登録導線も追加しています。</p><div class="work-tags"><span>PHP</span><span>PDO</span><span>Security</span><span>Debug</span><span>Refactoring</span><span>Testing</span><span>GitHub Actions</span></div><div class="work-links"><a href="https://github.com/k-nkjob/Store-Inventory-Management" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
+        </article>
       </div>
     </div></section>
 
