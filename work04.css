@@ -1,0 +1,136 @@
+/* Work 04: WordPress / WooCommerce EC portfolio */
+.work04-completed-visual {
+  position: relative;
+  min-height: 260px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0)),
+    #111;
+  color: #fff;
+}
+
+.work04-number,
+.work04-status {
+  position: absolute;
+  left: 24px;
+  z-index: 2;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.work04-number {
+  top: 24px;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.work04-status {
+  top: 68px;
+  font-size: .72rem;
+  letter-spacing: .12em;
+  color: rgba(255,255,255,.66);
+}
+
+.store-work-art {
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  width: 178px;
+  height: 118px;
+  transform: translate(-50%, -50%);
+}
+
+.storefront-art {
+  position: absolute;
+  left: 10px;
+  top: 22px;
+  width: 116px;
+  height: 72px;
+  border: 2px solid currentColor;
+  border-top: 0;
+}
+
+.storefront-art::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: -18px;
+  width: 128px;
+  height: 20px;
+  border: 2px solid currentColor;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 15px,
+      rgba(255,255,255,.18) 15px 30px
+    );
+}
+
+.storefront-art::after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  bottom: 0;
+  width: 34px;
+  height: 44px;
+  border: 2px solid currentColor;
+  border-bottom: 0;
+}
+
+.store-window-art {
+  position: absolute;
+  right: 12px;
+  bottom: 14px;
+  width: 42px;
+  height: 28px;
+  border: 2px solid currentColor;
+}
+
+.cart-art {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  width: 42px;
+  height: 34px;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-4deg);
+}
+
+.cart-art::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  width: 28px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-top: 0;
+  transform: skewX(-10deg);
+}
+
+.cart-art::after {
+  content: "••";
+  position: absolute;
+  left: 8px;
+  top: 19px;
+  letter-spacing: 16px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.store-art-label {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: .68rem;
+  letter-spacing: .14em;
+  color: rgba(255,255,255,.72);
+}
+
+@media (max-width: 700px) {
+  .store-work-art {
+    transform: translate(-50%, -50%) scale(.9);
+  }
+}
