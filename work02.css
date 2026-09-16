@@ -1,0 +1,106 @@
+/* PHP Management System completed-card visual */
+
+.work02-completed-visual {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 70%, rgba(110, 231, 183, 0.12), transparent 34%),
+    linear-gradient(135deg, rgba(110, 231, 183, 0.09), rgba(255, 255, 255, 0.02));
+}
+
+.work02-number,
+.work02-status {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.work02-number {
+  top: 24px;
+  color: var(--accent);
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.work02-status {
+  top: 68px;
+  color: var(--text-muted);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.management-work-art {
+  position: absolute;
+  top: 102px;
+  left: 50%;
+  width: 150px;
+  height: 92px;
+  transform: translateX(-50%);
+}
+
+.database-art {
+  position: absolute;
+  top: 4px;
+  left: 35px;
+  width: 80px;
+  height: 54px;
+  border: 2px solid rgba(245, 247, 250, 0.88);
+  border-radius: 50% / 18%;
+}
+
+.database-art::before,
+.database-art::after,
+.database-art span {
+  content: "";
+  position: absolute;
+  left: -2px;
+  width: 80px;
+  height: 18px;
+  border: 2px solid rgba(245, 247, 250, 0.88);
+  border-top: 0;
+  border-radius: 0 0 50% 50% / 0 0 45% 45%;
+}
+
+.database-art::before { top: 14px; }
+.database-art::after { top: 30px; }
+.database-art span { display: none; }
+
+.security-badge-art {
+  position: absolute;
+  top: 31px;
+  right: 18px;
+  width: 31px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  border: 4px solid var(--surface);
+  border-radius: 50%;
+  color: #07120e;
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.management-art-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  color: var(--text-muted);
+  font-family: monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .management-work-art {
+    top: 101px;
+    transform: translateX(-50%) scale(0.94);
+  }
+}
