@@ -278,3 +278,35 @@ h1,h2,h3,.hero-description,.works-intro{
   .work-visual-v4{min-height:210px;padding:12px}
   .browser-scene,.mini-admin,.mini-inventory,.mini-store{min-height:155px}
 }
+
+
+/* === CONTRAST GUARDRAILS V1 ===
+   High-contrast neutral + blue system for reliable readability. */
+:root{
+  --read-text:#16243a;
+  --read-muted:#627186;
+  --read-link:#0b5fd7;
+  --read-action:#156fe8;
+}
+body{color:var(--read-text)!important}
+.about-main p,
+.service-card p,
+.work-content>p:not(.work-type),
+.contact-box p,
+.works-intro{color:var(--read-muted)!important}
+.work-links a,.panel-link,a:focus-visible{color:var(--read-link)}
+.button-primary{
+  background:var(--read-action)!important;
+  color:#fff!important;
+}
+.button-secondary{
+  background:#fff!important;
+  color:#213149!important;
+}
+.contact-box h3,
+.work-content h3,
+.section-heading h2{color:var(--read-text)!important}
+:focus-visible{
+  outline:3px solid rgba(21,111,232,.28)!important;
+  outline-offset:3px!important;
+}
