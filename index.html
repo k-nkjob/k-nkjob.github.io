@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="work02.css?v=1">
   <link rel="stylesheet" href="work03.css?v=1">
   <link rel="stylesheet" href="work04.css?v=1">
-  <link rel="stylesheet" href="showcase-v3.css?v=1">
+  <link rel="stylesheet" href="showcase-v4.css?v=1">
 </head>
 <body>
   <header class="header">
@@ -96,56 +96,102 @@
       </div>
     </div></section>
 
-    <section id="works" class="section section-alt"><div class="container">
-      <div class="section-heading"><p class="section-number">04</p><div><p class="section-label">WORKS</p><h2>自主制作</h2></div></div>
-      <p class="works-intro">公開可能な自主制作物を掲載しています。各作品では、使用技術・実装内容・ソースコードを確認できます。</p>
-      <div class="works-grid">
-        <article class="work-card">
-          <div class="work-image work-completed-visual">
-            <span class="completed-number">01</span><span class="completed-status">COMPLETED</span>
-            <div class="coffee-work-art" aria-hidden="true">
-              <div class="coffee-steam-art"><span></span><span></span><span></span></div>
-              <div class="coffee-cup-art"><span class="coffee-liquid-art"></span></div>
-              <span class="coffee-art-label">BREWED</span>
-            </div>
+    <section id="works" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-number">04</p>
+          <div>
+            <p class="section-label">WORKS</p>
+            <h2>自主制作</h2>
           </div>
-          <div class="work-content"><p class="work-type">FRONTEND</p><h3>NORTH COFFEE</h3><p>架空のコーヒーショップを題材にしたレスポンシブWebサイトです。HTML / CSS / JavaScriptを責務ごとに分離し、既存サイトの修正や機能追加を想定した保守しやすい構成で実装しています。</p><div class="work-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>ES Modules</span></div><div class="work-links"><a href="https://k-nkjob.github.io/responsive-cafe-site/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/k-nkjob/responsive-cafe-site" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
-        </article>
-        <article class="work-card">
-          <div class="work-image work02-completed-visual">
-            <span class="work02-number">02</span><span class="work02-status">COMPLETED</span>
-            <div class="management-work-art" aria-hidden="true">
-              <div class="database-art"><span></span><span></span><span></span></div>
-              <div class="security-badge-art">✓</div>
-              <span class="management-art-label">SECURED CRUD</span>
+        </div>
+        <p class="works-intro">公開可能な自主制作物です。見た目だけでなく、既存コードの理解・改修・不具合修正・動作確認まで含めて制作しています。</p>
+
+        <div class="works-grid works-grid-v4">
+          <article class="work-card work-card-v4">
+            <div class="work-visual-v4 cafe-preview">
+              <div class="browser-frame">
+                <div class="browser-bar"><span></span><span></span><span></span><small>north-coffee</small></div>
+                <div class="browser-scene cafe-scene">
+                  <div class="scene-copy"><small>SMALL BATCH / SLOW TIME</small><strong>日常に、静かな一杯を。</strong></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="work-content"><p class="work-type">BACKEND</p><h3>PHP Management System</h3><p>ログイン認証付きの顧客管理システムです。PHP / PDO / MySQLでCRUD・検索・ページネーションを実装し、認証、DB接続、入力検証、CSRF対策、データアクセスを責務ごとに分離しています。</p><div class="work-tags"><span>PHP</span><span>PDO</span><span>MySQL</span><span>CRUD</span><span>Security</span><span>GitHub Actions</span></div><div class="work-links"><a href="https://knkjob-pms.infinityfree.io/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/k-nkjob/php-management-system" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
-        </article>
-        <article class="work-card">
-          <div class="work-image work03-progress-visual">
-            <span class="work03-number">03</span><span class="work03-status">IN PROGRESS</span>
-            <div class="modernization-work-art" aria-hidden="true">
-              <div class="code-window-art"></div>
-              <div class="modernization-badge-art">✓</div>
-              <span class="modernization-art-label">AUDIT / FIX / VERIFY</span>
+            <div class="work-content">
+              <p class="work-type">FRONTEND</p>
+              <h3>NORTH COFFEE</h3>
+              <p>架空のコーヒーショップを題材にしたレスポンシブWebサイトです。HTML / CSS / JavaScriptを責務ごとに分離し、保守しやすい構成で実装しています。</p>
+              <div class="work-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>ES Modules</span></div>
+              <div class="work-links"><a href="https://k-nkjob.github.io/responsive-cafe-site/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/k-nkjob/responsive-cafe-site" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
             </div>
-          </div>
-          <div class="work-content"><p class="work-type">DEBUG / MODERNIZATION</p><h3>Legacy PHP Inventory System Modernization</h3><p>MITライセンスの既存PHP在庫管理OSSをForkし、SQL直結・平文パスワード・GET削除・全件取得などの問題を調査。PDO / Prepared Statement、ハッシュ認証、CSRF対策、トランザクション、DB側検索・ページネーションへ改修しました。実際の操作から商品別入出庫履歴と、履歴から対象商品を引き継ぐ入出庫登録導線も追加しています。</p><div class="work-tags"><span>PHP</span><span>PDO</span><span>Security</span><span>Debug</span><span>Refactoring</span><span>Testing</span><span>GitHub Actions</span></div><div class="work-links"><a href="https://github.com/k-nkjob/Store-Inventory-Management" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
-        </article>
-        <article class="work-card">
-          <div class="work-image work04-completed-visual">
-            <span class="work04-number">04</span><span class="work04-status">COMPLETED</span>
-            <div class="store-work-art" aria-hidden="true">
-              <div class="storefront-art"><span class="store-window-art"></span></div>
-              <div class="cart-art"></div>
-              <span class="store-art-label">EC / CUSTOMIZED</span>
+          </article>
+
+          <article class="work-card work-card-v4">
+            <div class="work-visual-v4 management-preview">
+              <div class="browser-frame">
+                <div class="browser-bar"><span></span><span></span><span></span><small>management-system</small></div>
+                <div class="mini-admin">
+                  <aside><b>MS</b><i></i><i></i><i></i><i></i></aside>
+                  <main>
+                    <div class="mini-title"><strong>Customers</strong><em>＋ Add</em></div>
+                    <div class="mini-search"></div>
+                    <div class="mini-table"><span></span><span></span><span></span><span></span></div>
+                  </main>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="work-content"><p class="work-type">WORDPRESS / E-COMMERCE</p><h3>KNKJOB STORE</h3><p>WordPress / WooCommerceで構築した自主制作ECサイトです。6商品、サイズ・カラーのバリエーション、SKU・在庫、セール、クーポン、送料、デモ注文から受注確認まで公開環境で検証しました。実操作で見つけたパンくず、レスポンシブ、商品カード、Coming Soonキャッシュ等の問題を切り分け、AI生成コードもそのまま採用せず動作確認と再修正を実施。修正の副作用が増えた段階で、ページ単位の責務分離と共通レイアウト基盤へ設計を見直しています。</p><div class="work-tags"><span>WordPress</span><span>WooCommerce</span><span>PHP</span><span>JavaScript</span><span>Debug</span><span>Responsive</span><span>AI-assisted</span><span>Modular Design</span></div><div class="work-links"><a href="https://knkjob-store.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/k-nkjob/wordpress-woocommerce-store" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
-        </article>
+            <div class="work-content">
+              <p class="work-type">BACKEND</p>
+              <h3>PHP Management System</h3>
+              <p>ログイン認証付きの顧客管理システムです。PHP / PDO / MySQLでCRUD・検索・ページネーションを実装し、認証・入力検証・CSRF対策を分離しています。</p>
+              <div class="work-tags"><span>PHP</span><span>PDO</span><span>MySQL</span><span>CRUD</span><span>Security</span><span>GitHub Actions</span></div>
+              <div class="work-links"><a href="https://knkjob-pms.infinityfree.io/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/k-nkjob/php-management-system" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+            </div>
+          </article>
+
+          <article class="work-card work-card-v4">
+            <div class="work-visual-v4 inventory-preview">
+              <div class="browser-frame">
+                <div class="browser-bar"><span></span><span></span><span></span><small>inventory-modernization</small></div>
+                <div class="mini-inventory">
+                  <aside><b>MI</b><i></i><i></i><i></i></aside>
+                  <main>
+                    <div class="stats-row"><span></span><span></span><span></span></div>
+                    <div class="inventory-table"><b></b><i></i><i></i><i></i><i></i></div>
+                  </main>
+                </div>
+              </div>
+            </div>
+            <div class="work-content">
+              <p class="work-type">DEBUG / MODERNIZATION</p>
+              <h3>Legacy PHP Inventory System Modernization</h3>
+              <p>既存PHP在庫管理OSSを解析し、PDO / Prepared Statement、ハッシュ認証、CSRF対策、DB側検索・ページネーション等へ改修。商品別入出庫履歴も追加しています。</p>
+              <div class="work-tags"><span>PHP</span><span>PDO</span><span>Security</span><span>Debug</span><span>Refactoring</span><span>Testing</span></div>
+              <div class="work-links"><a href="https://github.com/k-nkjob/Store-Inventory-Management" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+            </div>
+          </article>
+
+          <article class="work-card work-card-v4">
+            <div class="work-visual-v4 store-preview">
+              <div class="browser-frame">
+                <div class="browser-bar"><span></span><span></span><span></span><small>knkjob-store</small></div>
+                <div class="mini-store">
+                  <div class="store-hero"><span>Simple pieces.<br>Built for daily life.</span></div>
+                  <div class="store-products"><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="work-content">
+              <p class="work-type">WORDPRESS / E-COMMERCE</p>
+              <h3>KNKJOB STORE</h3>
+              <p>WordPress / WooCommerceで構築した自主制作ECサイトです。商品、SKU・在庫、セール、クーポン、送料、デモ注文まで公開環境で検証しています。</p>
+              <div class="work-tags"><span>WordPress</span><span>WooCommerce</span><span>PHP</span><span>JavaScript</span><span>Debug</span><span>Responsive</span></div>
+              <div class="work-links"><a href="https://knkjob-store.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/k-nkjob/wordpress-woocommerce-store" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+            </div>
+          </article>
+        </div>
       </div>
-    </div></section>
+    </section>
 
     <section id="contact" class="section contact-section"><div class="container">
       <div class="section-heading"><p class="section-number">05</p><div><p class="section-label">CONTACT</p><h2>お問い合わせ</h2></div></div>
